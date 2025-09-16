@@ -114,7 +114,8 @@ $filePath = realpath($trimmedURI);
 // If it is a directory, try to find an index file to serve it
 if ($filePath && is_dir($filePath)){
     foreach (['index.php', 'index.html'] as $indexFile){
-        if ($filePath = realpath($filePath . DIRECTORY_SEPARATOR . $indexFile)){
+        if (file_exists(realpath($filePath . DIRECTORY_SEPARATOR . $indexFile))){
+            $filePath = realpath($filePath . DIRECTORY_SEPARATOR . $indexFile);
             break;
         }
     }
