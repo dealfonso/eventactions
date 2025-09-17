@@ -1,5 +1,5 @@
 # Name of the library (if not specified, the name of the current folder will be used)
-LIBRARY_NAME = 
+LIBRARY_NAME = eventactions
 # The files that compose your library (if not specified, all the .js files in the src folder will be used)
 FILES = src/*.js
 # The css files that accompany your library (if not specified, no css files will be used)
