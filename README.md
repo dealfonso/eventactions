@@ -16,7 +16,7 @@ e.g. if on a button you want to toggle a class on itself when clicked, you can d
 Using `EventActions`, you can achieve the same with:
 
 ```html
-<button data-ca-toggle="active">push me</button>
+<button data-ca-class-toggle="active">push me</button>
 ```
 
 Moreover using the `data-ca-*` attributes, you can define multiple actions, conditions, delays, confirmations, and even modify the content of elements, when the user clicks an html element (e.g. a button).
